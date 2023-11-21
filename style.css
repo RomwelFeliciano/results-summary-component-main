@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+main {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    border-radius: 35px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.purple-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    padding: 2rem;
+    border-radius: 35px;
+}
+
+.white-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    background: hsl(0, 0%, 100%);
+    padding: 2rem;
+    border-radius: 35px;
+}
+
+.result {
+    margin-top: -10px;
+    font-size: 18px;
+    opacity: .7;
+}
+
+.circle {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.score {
+    font-size: 3rem;
+}
+
+.total-score {
+    font-size: 15px;
+    opacity: .5;
+}
+
+.body-message {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.great {
+    margin-bottom: 6px;
+}
+
+.paragraph {
+    font-size: 16px;
+    opacity: .7;
+}
+
+@media only screen and (max-width: 375px) {
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .purple-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+    }
+
+    .white-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+        background: hsl(0, 0%, 100%);
+        padding: 2rem;
+    }
+
+    .summary {
+        margin-top: -10px;
+        font-size: 18px;
+        opacity: .9;
+    }
+
+    .cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 8px;
+        padding: 18px 15px;
+    }
+
+    .card.one {
+        background: hsla(0, 100%, 67%, 10%);
+    }
+
+    .card.two {
+        background: hsla(39, 100%, 56%, 10%);
+    }
+
+    .card.three {
+        background: hsla(166, 100%, 37%, 10%);
+    }
+
+    .card.four {
+        background: hsla(234, 85%, 45%, 10%);
+    }
+
+    h3.one {
+        color: hsl(0, 100%, 67%);
+    }
+
+    h3.two {
+        color: hsl(39, 100%, 56%);
+    }
+
+    h3.three {
+        color: hsl(166, 100%, 37%);
+    }
+
+    h3.four {
+        color: hsl(234, 85%, 45%);
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .title h3 {
+        font-size: 17px;
+    }
+
+    .scores {
+        display: flex;
+        gap: 5px;
+    }
+
+    .scores span:first-child {
+        font-weight: 800;
+    }
+
+    .scores span:not(:first-child) {
+        opacity: .7;
+    }
+}
+
+button {
+    width: 100%;
+    padding: 18px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    color: white;
+    background: hsl(224, 30%, 27%);
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+
+.attribution {
+    text-align: center;
+}
